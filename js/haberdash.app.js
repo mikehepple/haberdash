@@ -36,7 +36,9 @@ app.controller('ModuleController', function($scope, $route, $location){
 });
 
 app.config(function($routeProvider, $locationProvider) {
-	$routeProvider.otherwise({
+	$routeProvider
+	.when('/', { templateUrl : 'partials/home.html'})
+	.otherwise({
 		templateUrl: 'partials/404.html'
 	});
 });
