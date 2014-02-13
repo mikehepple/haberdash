@@ -8,6 +8,7 @@ _modules.register({
 });
 
 function UserListCtrl($scope,dataUsers) {
+	$scope.users = dataUsers.users;
 }
 
 function UserCtrl($scope,$routeParams,dataUsers,mixUserComponents) {
